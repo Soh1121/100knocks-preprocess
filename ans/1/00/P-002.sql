@@ -1,5 +1,5 @@
 SELECT
-    sales_ymd AS sales_date, customer_id, product_cd, amount
+    sales_ymd, customer_id, product_cd, amount
 FROM
     receipt
 LIMIT
