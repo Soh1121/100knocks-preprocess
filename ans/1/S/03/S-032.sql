@@ -1,0 +1,8 @@
+SELECT
+    PERCENTILE_CONT(0.25) WITHIN GROUP ( ORDER BY amount ) AS amount_25per,
+    PERCENTILE_CONT(0.5) WITHIN GROUP ( ORDER BY amount ) AS amount_50per,
+    PERCENTILE_CONT(0.75) WITHIN GROUP ( ORDER BY amount ) AS amount_75per,
+    PERCENTILE_CONT(1) WITHIN GROUP ( ORDER BY amount ) AS amount_100per
+FROM
+    receipt
+;
