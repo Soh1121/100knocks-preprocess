@@ -21,7 +21,7 @@ SELECT
 FROM
     random_tbl
 WHERE
-    row / count <= 0.01
+    row <= count * 0.01
 LIMIT
     10
 ;
