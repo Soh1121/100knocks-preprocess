@@ -1,0 +1,9 @@
+COPY
+    product_full
+TO
+    '/tmp/data/S_product_full_UTF-8_noheader.csv'
+WITH
+    CSV
+ENCODING
+    'UTF-8'
+;
